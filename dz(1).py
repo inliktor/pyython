@@ -7,12 +7,11 @@ s=os.getcwd()
 print('______________\n')
 print(s)
 print('______________\n')
-for root, dir, files in os.walk(r'C:/Users/Public/'):
-    for name in files:
-        print(name)
-        for name in os.listdir('.'):
-            if fnmatch.fnmatch(name, '*.'):
-
+for root, dirs, files in os.walk(path):
+    print(files)
+for name in files:
+    for name in os.listdir('.'):
+        if fnmatch.fnmatch(name, '*.'):
                 print(name)
             
         #fullname = os.path.join(root, name)
