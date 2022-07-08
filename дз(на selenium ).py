@@ -28,23 +28,11 @@ option = webdriver.FirefoxOptions()
 option.set_preference('dom.webdriver.enabled',False)
 option.set_preference('dom.webnotifications.enabled',False)
 option.set_preference('media.volune_scale', '0.0')
-db = sqlite3.connect('poisk.db')
-
-
-c = db.cursor()
-
-c.execute()
 
 
 sel=webdriver.Firefox(options=option)
 try:
     def getddglinks(qtext):
-
-
-        
-        
-        
-    
         links = []
         sel.get('https://duckduckgo.com/?q=' + qtext.replace(' ', '+'))
         elements = sel.find_elements_by_css_selector('.nrn-react-div')   
@@ -60,7 +48,7 @@ try:
         print(link)
 except:
     pass
-db.close()
+
 
 
     
