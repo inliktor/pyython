@@ -1,8 +1,22 @@
-i = 0
-lst = []
-while i < 10:
- n = int(input('Введите любые числа 10 раз: '))
- lst.append(n * 10)
- i += 1
-lst.sort()
-print(lst)
+import fake_useragent
+import requests
+from bs4 import BeautifulSoup as Soup
+from bs4 import BeautifulSoup
+import pandas as pd
+
+session = requests.Session()
+
+
+url='http://stat.prtcom.ru/?mode=auth'
+user=fake_useragent.UserAgent().random
+
+header ={
+    'user-agent': user
+}
+data={
+    'user': 'CiganokMS',
+    'passw': 'On4amKSE'
+}
+
+responce = session.post(url, data=data, headers=header).text
+soup = BeautifulSoup(responce, 'lxml') 
