@@ -17,10 +17,10 @@ links = []
 elements = []
 sel.get('https://login.dnevnik.ru/login')
 xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[1]/div[1]/label/input'
-sel.find_element_by_xpath(xpath).send_keys('tsyganokmikhail')
+sel.find_element_by_xpath(xpath).send_keys('login')
 
 wor_xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[2]/div[1]/label/input'
-sel.find_element_by_xpath(wor_xpath).send_keys('0010085070Misha')
+sel.find_element_by_xpath(wor_xpath).send_keys('password')
 
 But_xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[4]/div[1]/input'
 button = sel.find_element_by_xpath(But_xpath).click()
