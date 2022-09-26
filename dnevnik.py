@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup as Soup
 from bs4 import BeautifulSoup
 import pandas as pd
 
+
 url='https://login.dnevnik.ru/login'
 user= fake_useragent.UserAgent().random
 
@@ -11,13 +12,17 @@ header={
 'user-agent':user
 }
 data = {
-    'login': 'def',
-    'password': 'def'
+    'login': '',
+    'password': ''
 
 }
-login=input('Введите свой логин поязя: ')
-passwd= input('Пороль плиз: ')
+login=""
+passwd=""
 data['login']= login
 data['password']=passwd
 session= requests.Session()
-Auto=session.post(url,data,header).text
+shh="https://dnevnik.ru/userfeed"
+Auto=session.post(url, data=data, headers=header).text
+ahsf=session.get(shh).text
+#tsyganokmikhail
+#0010085070Misha
