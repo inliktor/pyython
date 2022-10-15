@@ -16,11 +16,11 @@ sel=webdriver.Firefox(options=option)
 
 sel.get('https://login.dnevnik.ru/login')
 xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[1]/div[1]/label/input'
-Login="tsyganokmikhail"
+Login=""
 sel.find_element_by_xpath(xpath).send_keys(Login)
 
 wor_xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[2]/div[1]/label/input'
-Password="0010085070Misha"
+Password=""
 sel.find_element_by_xpath(wor_xpath).send_keys(Password)
 
 But_xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[4]/div[1]/input'
