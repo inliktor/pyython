@@ -5,3 +5,7 @@ tg_bot_config.py
 geckodriver.log
 el.txt
 __pycache__
+dnevnik.py
+dnevnikselenium.py
+esmea.ipynb
+парсер инет провайдера.ipynb
