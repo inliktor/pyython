@@ -5,14 +5,12 @@ token='5567467526:AAHZViw5XZUrrlzau1QsYpm5bq_sLR4Up7o'
 bot=telebot.TeleBot(token)
 
 try:
-    #Временно не доступно
         def authL():
             Logins=input()
             return(Logins)
         def authP():
             Passwords=input()
             return(Passwords)
-    #Временно не доступно
 
     #||||||||||||||||| ||||||||||||||||||| ||||||||||||||||||| ||||||||||||||| |||||||||||||||| 
 
@@ -31,7 +29,7 @@ try:
         def future_message(message):
             bot.send_message(message.chat.id,"Будущие бота туманно, если есть идеи по развитию бота прошу в лс @inliktor")
 
-    #кнопка тип клава тг чтоб ваши пальчики комманд
+    #кнопка тип клава тг чтоб ваши пальчики не ебались с комманд
         @bot.message_handler(commands=['button'])
         def button_message(message):
             markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -50,7 +48,7 @@ try:
                 bot.send_message(message.chat.id, raspiss3)
                 bot.send_message(message.chat.id, raspiss4)
                 bot.send_message(message.chat.id, raspiss5)             
-    #Дневничок, Эта лупа залупа делает парсинг
+    #Дневничок, Эта лупа залупа делает парсинг и жестко трахает мне мозги 
         @bot.message_handler(content_types='text')
         def message_reply(message):
             if message.text == "/start":
@@ -66,3 +64,4 @@ try:
 except: 
     pass
 
+#Создать в начале лог и пас с инпутом а позже всунуть его в сенд и импортировать в сел
