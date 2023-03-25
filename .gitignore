@@ -7,5 +7,12 @@ el.txt
 __pycache__
 dnevnik.py
 dnevnikselenium.py
-esmea.ipynb
+парсер инет провайдера.ipynb
+.idea
+Dnevnik_on_jupiter.ipynb
+hena.txt
+Not_ready.ipynb
+telegram.py
+tg_Bot.py
+tg_bot_config.py
 парсер инет провайдера.ipynb
