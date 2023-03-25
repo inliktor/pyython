@@ -16,8 +16,8 @@ data = {
     'password': ''
 
 }
-login=""
-passwd=""
+login="tsyganokmikhail"
+passwd="0010085070Misha'"
 data['login']= login
 data['password']=passwd
 session= requests.Session()

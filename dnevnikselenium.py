@@ -26,12 +26,12 @@ sel.find_element_by_xpath(wor_xpath).send_keys(Password)
 But_xpath='/html/body/div/div/div/div/div/form/div[2]/div[3]/div[4]/div[1]/input'
 button = sel.find_element_by_xpath(But_xpath).click()
 
-xpath="/html/body/div[6]/div/div[2]/div[2]/div[2]"
-score=sel.find_element_by_xpath(xpath).text
+Tsonka="/html/body/div[4]/div/div[2]/div[2]/div[2]/div/div/div/div[1]/div[1]/div[2]"
+score=sel.find_element_by_xpath(Tsonka).text
 print(score)
 
-day = "/html/body/div[6]/div/div[2]/div[4]/div[3]/div[1]/div[2]"
-days=sel.find_element_by_xpath(day) 
+day='/html/body/div[4]/div/div[2]/div[4]/div[3]/div[1]/div[2]'
+days=sel.find_element_by_xpath(day).text
 
 #|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
