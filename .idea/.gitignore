@@ -1,8 +1,0 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-__pycache__
-.gitignore
-geckodriver.log
-tg_Bot.py
-tg_bot_config.py
